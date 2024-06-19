@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam</title>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body id="body">
+    <div class="container">
+
+      <div class="card">
+  
+<div id="before">
+  <center>
+    <h1 class="md-typescale-display-small">
+      Cek Khodam 
+    </h1>
+  </center>
+    
+    
+<h2 class="md-typescale-title-large">Masukan namamu :</h2>
+  <form>
+      <md-filled-text-field id="inputName" required label="Nama Kamu "> </md-filled-text-field>
+      <br><br>
+    <md-filled-button id="btnCek" name="submit">Cek Khodam</md-filled-button>
+    </form>
+</div>
+  
+<div style="display:none" id="after">
+<h3 class="md-typescale-title-large"><span id="yourName"></span>, khodam kamu adalah</span>
+<center>
+<h1 class="md-typescale-display-small" id="output"></h1>
+  </center>
+<md-filled-button id="retry">Ulangi</md-filled-button>
+</div>
+
+    </div>
+</div>
+
+<img class="macan" src="https://img1.picmix.com/output/stamp/normal/5/7/1/7/1707175_aa933.gif">
+
+
+<br>
+<div class="foot">
+<md-block>
+    [![donate - saweria](https://img.shields.io/badge/donate-saweria-orange?style=for-the-badge)](https://saweria.co/mininxd)
+
+</md-block>
+</div>
+
+   <script src="./script.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/eb08171867.js" crossorigin="anonymous"></script>
+<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</body>
